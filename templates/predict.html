@@ -8,6 +8,18 @@
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Favicons -->
     <link href="../static/img/favicon.png" rel="icon" />
     <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -74,17 +86,19 @@
       <!-- ======= Services Section ======= -->
       <section id="product">
         <div class="container" data-aos="fade-up">
-          <div class="section-header-prod"></div>
-          Hasil Deteksi :
-          <div class="row justify-content-center">
-            <div class="col-md">
-              {% if result,gambar,penjelasan %}
-              <p>{{result}}</p>
+          <div class="section-header-prod">Hasil Deteksi :</div>
+          <div class="row">
+            {% if result,gambar,penjelasan %}
+            <div class="col-lg-6">
+              <p>Ikan {{result}}</p>
               <p>{{penjelasan}}</p>
-              <img src="{{gambar}}" alt="" width="200px" height="200px" />
-              {% endif %}
+            </div>
+
+            <div class="col-lg-6 d-flex justify-content-center">
+              <img src="{{gambar}}" alt="" width="300px" height="300px" />
             </div>
           </div>
+          {% endif %}
         </div>
       </section>
       <!-- End Services Section -->

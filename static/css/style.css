@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 :root {
-  --primary: #a8d0e6;
+  --primary: #F4FFFD;
   --secondary: #ffebb3;
   --additional: #031a2e;
 }
@@ -366,7 +366,6 @@ section {
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 5px 0 7px -250px;
 }
 #header .logo a {
   color: var(--additional);
